@@ -19,8 +19,8 @@ console.log(listGallery);
 let galleryMarkUp = ``
 images.forEach(image => { 
   const {url, alt} = image
-  galleryMarkUp += `<li>
-  <img  src=${url}  alt=${alt}>
+  galleryMarkUp += `<li >
+  <img  src=${url}  alt=${alt} width = '450'>
    </li>`
   console.log(galleryMarkUp);
   return galleryMarkUp;
