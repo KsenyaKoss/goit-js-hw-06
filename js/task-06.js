@@ -13,3 +13,4 @@ inputText.addEventListener('blur', () => {
     const arrInputText = [...inputText.value];
     arrInputText.length !== parseInt(inputText.dataset.length) ? inputText.classList.add('invalid') : inputText.classList.add('valid');
 });
+
