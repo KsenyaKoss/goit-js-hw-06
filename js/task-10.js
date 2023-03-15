@@ -9,10 +9,6 @@ const btnDestroy = document.querySelector('button[data-destroy]');
 const elCollection = document.querySelector('#boxes')
 
 const inputEl = document.querySelector('input[type="number"]');
-let inputValue = '';
-
-
-inputEl.addEventListener('input', () => inputValue = parseInt(inputEl.value));
 
 function createBoxes(value) {
   const container = document.createElement("div")
@@ -30,11 +26,12 @@ function createBoxes(value) {
 elCollection.append(container);
 }
 
-btnCreate.addEventListener('click', () => {createBoxes(inputValue)});
+btnCreate.addEventListener('click', () => {createBoxes(inputEl.value)});
 
 function destroyBoxes() {
   elCollection.innerHTML = '';
   inputEl.value = '';
+  
 }
 
 btnDestroy.addEventListener('click',destroyBoxes);

@@ -23,7 +23,6 @@ images.forEach(image => {
   <img  src=${url}  alt=${alt} width = '450'>
    </li>`
   console.log(galleryMarkUp);
-  return galleryMarkUp;
 });
 
 
