@@ -28,9 +28,8 @@ button {
 img {
   display: inline-block;
   height: 250px;
-
-
  }
+ 
 .gallery {
   list-style: none;
   display: flex;
