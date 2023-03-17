@@ -5,6 +5,7 @@ form.addEventListener('submit', onFormSubmit);
 function onFormSubmit(event){
   event.preventDefault();
   const elements = form.elements; 
+  console.log(elements);
   const data = {}; 
 
   for (let i = 0; i < elements.length; i++) {
